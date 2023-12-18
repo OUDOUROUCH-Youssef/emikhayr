@@ -12,7 +12,7 @@ export default function Post({likeNumber,user,imageUrl,caption,commentNumber}){
     }
 
     return(
-            <div className="rounded-2xl bg-white w-[50%] h-[80%] ml-auto mr-auto mt-auto mb-auto border border-gray-400">
+            <div className="rounded-2xl bg-white w-[47%] h-[80vh] ml-auto mr-auto mt-auto mb-auto border border-gray-400">
                 <div className="flex">
                     <img src="sanji.jpg" className="ml-[1vw] mt-[4vh] w-[10%] h-[15%] rounded-full border border-r-1 border-r-[#A8A6A6]"/>
                     <div className="flex-row">
