@@ -8,12 +8,12 @@ export default function NewPost() {
                     <input className="bg-white border border-gray-400 rounded-2xl w-[80%] h-[7vh] ml-[1vw] mt-auto mb-auto pl-[1vw]" type="text" placeholder="Express what you feel..."/>
                 </div>
                 <div className="flex mr-[5vw]">
-                    <img src="media.svg" className="ml-auto h-[4vh] w-[4vw]"/>
-                    <div className="text-black font-roboto text-sm font-bold">
+                    <img src="media.svg" className="ml-auto h-[4vh] w-[4vw] cursor-pointer"/>
+                    <div className="text-black font-roboto text-sm font-bold cursor-pointer">
                         Media
                     </div>
-                    <img src="Calendar.svg" className="h-[4vh] w-[4vw]"/>
-                    <div className="text-black font-roboto text-sm font-bold">
+                    <img src="Calendar.svg" className="h-[4vh] w-[4vw] cursor-pointer"/>
+                    <div className="text-black font-roboto text-sm font-bold cursor-pointer">
                         Evenement
                     </div>
                 </div>

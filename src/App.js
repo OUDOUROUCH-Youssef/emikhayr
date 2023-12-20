@@ -7,6 +7,7 @@ import NavigationBar from "./components/components/NavigationBar";
 import ProfileHolder from "./components/components/ProfileHolder";
 import React from "react";
 import NewPost from "./components/components/NewPost";
+import SuggestionHolder from "./components/components/SuggestionHolder";
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
               <NewPost></NewPost>
               {divs}
           </div>
+          <SuggestionHolder></SuggestionHolder>
       </div>
   );
 }
