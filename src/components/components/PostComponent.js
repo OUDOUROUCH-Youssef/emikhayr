@@ -28,7 +28,7 @@ export default function Post({likeNumber,user,imageUrl,caption,commentNumber}){
                     </div>
                 </div>
                 <div className="text-black font-roboto text-base font-medium ml-[3vw] mr-[3vw] mt-[2vh]">
-                    Hello everybody i am abdelilah ayache that is fucking youssef oudourouch right now in the class
+                Once the cloning process is complete, you'll have a local copy of the repository in the directory you specified. You can access it using the command line or through a code editor
                 </div>
                 <img src="R.jpg" className="w-[90%] h-[50%] ml-[5%] mr-[5%] mt-[2vh]"/>
                 <div className="flex ml-[6%] mt-[2vh]">
