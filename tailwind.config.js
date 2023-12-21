@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         'maven-pro': ['Maven Pro', 'sans-serif'],
       },
+      whitespace: {
+        prewrap: 'pre-wrap',
+      },
     },
   },
   plugins: [],

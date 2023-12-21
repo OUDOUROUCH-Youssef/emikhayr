@@ -1,11 +1,18 @@
-import React from "react";
+import React, {useState} from "react";
 
-export default function Notification() {
+export default function Notification({showOption,onClickButton}) {
     const events=[{user:"EmiKhayr",event:"a une nouvelle publication",timeDecole:"maintenent",url:"emi-khayr.jpg"},
         {user:"EmiKhayr",event:"organise la premiere edition de forum social",timeDecole:"2h",url:"emi-khayr.jpg"},
     {user:"EmiKhayr",event:"a aime votre publication",timeDecole:"1 semaine",url:"emi-khayr.jpg"}];
+
+    const hide = () => {
+        onClickButton();
+    }
+
+
     return(
-        <div className="pt-[9vh] ml-[72vw] pl-10 fixed">
+        showOption? (<div className="fixed mr-auto w-[100vw] h-[100vh] z-20 bg-black bg-opacity-0 flex justify-center" onClick={onClickButton}>
+        <div className="pt-[9vh] ml-[69vw] pl-10 fixed z-20">
             <div className="bg-white border border-gray-400 pb-[2vh] w-[25vw] rounded-3xl">
                 <div className="text-black text-center font-roboto text-base font-medium mr-[50%] mt-[1vh]">Notification</div>
                 {events.map((item, index)=>(
@@ -26,5 +33,6 @@ export default function Notification() {
                 ))}
             </div>
         </div>
+        </div>):null
     )
 }

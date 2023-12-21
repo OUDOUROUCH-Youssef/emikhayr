@@ -1,6 +1,12 @@
 import React from "react";
+import {useNavigate} from "react-router-dom";
 
 export default function WhiteLayer({isLogIn,bigTitle,place1,place2,type1,type2}) {
+    let navigate = useNavigate();
+    const handleButtonClick = (event) => {
+        event.preventDefault();
+        return navigate("/Posts");
+    }
     return(
         <div className="flex-auto">
             <img src="khayrconnect;logo.svg" className="flex w-[15vw] h-[15vh] mt-[5vh] ml-auto mr-auto"/>
@@ -19,7 +25,7 @@ export default function WhiteLayer({isLogIn,bigTitle,place1,place2,type1,type2})
                 </div>
             </div>:
             <input className="rounded-full bg-gray-300 p-4 h-[6vh] w-[80%] ml-[10%] mt-[6vh] text-black font-inter text-base font-normal border-b-0 focus:border-none focus:outline-none" placeholder="Mot de passe" type="password"/>}
-            <button className={isLogIn? 'rounded-full bg-blue-800 w-[25%] p-4 ml-[37.5%] hover:bg-[#427AA1] mt-[10vh]': 'rounded-full bg-blue-800 w-[25%] p-4 ml-[37.5%] hover:bg-[#427AA1] mt-[4.6vh]'}>
+            <button className={isLogIn? 'rounded-full bg-blue-800 w-[25%] p-4 ml-[37.5%] hover:bg-[#427AA1] mt-[10vh]': 'rounded-full bg-blue-800 w-[25%] p-4 ml-[37.5%] hover:bg-[#427AA1] mt-[4.6vh]'} onClick={handleButtonClick}>
                 <div className="text-white text-center text-shadow font-inter text-lg font-extrabold">
                     {bigTitle}
                 </div>

@@ -9,24 +9,30 @@ import ProfileHolder from "./components/components/ProfileHolder";
 import React from "react";
 import NewPost from "./components/components/NewPost";
 import SuggestionHolder from "./components/components/SuggestionHolder";
+import PagePost from "./components/pages/PagePost";
+import HomePage from "./components/HomePage/HomePage";
+import AssociationForm from "./components/pages/AssociationForm";
+import Settings from "./components/components/settings";
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import Error from "./components/pages/Error404";
+
 
 function App() {
 
-    const divs = Array.from({ length: 10 }, (_, index) => (
-        <Post likeNumber={120}></Post>
-    ));
 
   return (
-      <div>
-          <NavigationBar></NavigationBar>
-          <ProfileHolder></ProfileHolder>
-          <Notification></Notification>
-          <div className="inline-grid w-[100vw] mt-[10vh] pl-[4vw] gap-y-4 pt-10 h-[88vh] overflow-y-scroll">
-              <NewPost></NewPost>
-              {divs}
-          </div>
-          <SuggestionHolder></SuggestionHolder>
-      </div>
+      <React.StrictMode>
+              <Router>
+                  <Routes>
+                      <Route path="/Posts" element={<PagePost/>} />
+                      <Route path='/Login' element={<LoginPage/>} />
+                      <Route path={"/"} element={<HomePage/>}/>
+                      <Route path="/association-form" element={<AssociationForm/>} />
+                      <Route path="/Settings" element={<Settings/>}/>
+                      <Route path="/*" element={<Error/>} />
+                  </Routes>
+              </Router>
+      </React.StrictMode>
   );
 }
 
