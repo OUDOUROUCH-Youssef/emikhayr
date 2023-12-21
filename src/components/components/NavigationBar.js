@@ -20,7 +20,7 @@ export default function NavigationBar({ onBellClick }) {
 
 
     return(
-        <div className="bg-white w-[100vw] h-[10vh] border-b border-gray-400 flex fixed">
+        <div className="bg-white w-[100vw] h-[10vh] border-b border-gray-400 flex fixed z-20">
             <img src="khayrconnect;logo.svg" className="h-[8vh] w-[6vw] mt-auto mb-auto ml-[3vw] cursor-pointer" onClick={navigateToPost}/>
             <div className="mt-auto mb-auto ml-[2vw]">
                 <input className="rounded-lg bg-gray-300 p-4 h-[4vh] focus:outline-0 pl-[3vw]" type="text" placeholder="Search anything"/>
