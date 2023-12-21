@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 
 export default function Notification({showOption,onClickButton}) {
-    const events=[{user:"EmiKhayr",event:"a une nouvelle publication",timeDecole:"maintenent",url:"emi-khayr.jpg"},
-        {user:"EmiKhayr",event:"organise la premiere edition de forum social",timeDecole:"2h",url:"emi-khayr.jpg"},
-    {user:"EmiKhayr",event:"a aime votre publication",timeDecole:"1 semaine",url:"emi-khayr.jpg"}];
+    const events=[{user:"EmiKhayr",event:"a publié une nouvelle publication",timeDecole:"maintenent",url:"emi-khayr.jpg"},
+        {user:"EmiKhayr",event:"organiser la première édition du forum social",timeDecole:"2h",url:"emi-khayr.jpg"},
+    {user:"EmiKhayr",event:"a aimé votre publication",timeDecole:"1 semaine",url:"emi-khayr.jpg"}];
 
     const hide = () => {
         onClickButton();

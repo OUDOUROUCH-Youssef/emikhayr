@@ -32,7 +32,7 @@ export default function ProfileHolder() {
                     <img src="emi-khayr.jpg" className="w-[4vw] h[2vh] rounded-full"/>
                     <div className="inline-block">
                         <div className="font-maven-pro text-black font-xl font-bold">
-                            Don du song
+                            Don de sang
                         </div>
                         <div className="flex">
                             <img src="position.png"/>
@@ -52,7 +52,7 @@ export default function ProfileHolder() {
                     <img src="emi-khayr.jpg" className="w-[4vw] h[2vh] rounded-full"/>
                     <div className="inline-block">
                         <div className="font-maven-pro text-black font-xl font-bold">
-                            1er edition de forum social
+                            1er edition du forum social
                         </div>
                         <div className="flex">
                             <img src="position.png"/>
