@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-export default function Post({likeNumber,user,imageUrl,caption,commentNumber}){
+export default function Post({likeNumber,user,imageUrl,caption,commentNumber,info,logo,time}){
 
     const [like, setLike] = useState("false");
     const [postLikeNumber, setPostLikeNumber] = useState(likeNumber);
@@ -12,30 +12,30 @@ export default function Post({likeNumber,user,imageUrl,caption,commentNumber}){
     }
 
     return(
-            <div className="rounded-2xl bg-white w-[47%] h-[85vh] ml-auto mr-auto mt-auto mb-auto border border-gray-400">
+            <div className="rounded-2xl bg-white w-[47%] h-[91vh] ml-auto mr-auto mt-auto mb-auto border border-gray-400">
                 <div className="flex">
-                    <img src="sanji.jpg" className="ml-[1vw] mt-[4vh] w-[10%] h-[15%] rounded-full border border-r-1 border-r-[#A8A6A6]"/>
+                    <img src={logo} className="ml-[1vw] mt-[4vh] w-[10%] h-[15%] rounded-full border border-r-1 border-r-[#A8A6A6]"/>
                     <div className="flex-row">
                         <div className="text-black font-roboto text-l font-bold mt-[4vh] ml-4">
-                            Abdelilah AYACHE
+                            {user}
                         </div>
                         <div className="text-gray-400 font-roboto text-base font-bold ml-4 mt-[-0.5vh]">
-                            Membre du club emi-khayr
+                            {info}
                         </div>
                         <div className="text-gray-600 font-roboto text-sm font-medium ml-4 mt-[-0.5vh]">
-                            4 sem
+                            {time}
                         </div>
                     </div>
                 </div>
                 <div className="text-black font-roboto text-base font-medium ml-[3vw] mr-[3vw] mt-[2vh]">
-                Once the cloning process is complete, you'll have a local copy of the repository in the directory you specified. You can access it using the command line or through a code editor
+                    {caption}
                 </div>
-                <img src="R.jpg" className="w-[90%] h-[50%] ml-[5%] mr-[5%] mt-[2vh]"/>
+                <img src={imageUrl} className="w-[90%] h-[50%] ml-[5%] mr-[5%] mt-[2vh]"/>
                 <div className="flex ml-[6%] mt-[2vh]">
                     <img src="heart.svg"/>
                     <div className="text-black font-roboto text-sm font-bold ml-[1%]">{postLikeNumber}</div>
                     <img src="cmnt.svg" className="ml-[3%]"/>
-                    <div className="text-black font-roboto text-sm font-bold ml-[1%]">25</div>
+                    <div className="text-black font-roboto text-sm font-bold ml-[1%]">{commentNumber}</div>
                 </div>
                 <div className="bg-[#A8A6A6] w-[100%] h-[2px] mt-[2%]"></div>
                 <div className="flex mt-[2vh] ml-[3vw] gap-[20%] mb-[2vh]">

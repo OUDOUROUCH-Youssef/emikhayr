@@ -15,6 +15,7 @@ import AssociationForm from "./components/pages/AssociationForm";
 import Settings from "./components/components/settings";
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Error from "./components/pages/Error404";
+import MyProfile from "./components/pages/MyProfile";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
                       <Route path="/Posts" element={<PagePost/>} />
                       <Route path='/Login' element={<LoginPage/>} />
                       <Route path={"/"} element={<HomePage/>}/>
+                      <Route path={"/profile"} element={<MyProfile/>}/>
                       <Route path="/association-form" element={<AssociationForm/>} />
                       <Route path="/Settings" element={<Settings/>}/>
                       <Route path="/*" element={<Error/>} />
